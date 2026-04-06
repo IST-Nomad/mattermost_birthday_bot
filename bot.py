@@ -22,7 +22,7 @@ class Database:
                 host=os.getenv('DB_HOST', 'localhost'),
                 port=os.getenv('DB_PORT', '5432'),
                 dbname=os.getenv('DB_NAME', 'birthday_bot'),
-                user=os.getenv('DB_USER', 'postgres'),
+                user=os.getenv('DB_USER'),
                 password=os.getenv('DB_PASSWORD')
             )
             self.create_tables()
